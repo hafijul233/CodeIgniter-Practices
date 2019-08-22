@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbd679c0-8f60-4b28-b5b2-3b4638c9b271" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controllers/Authentication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/Authentication_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/authenticate/activation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/authenticate/home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/authenticate/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/authenticate/recovery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/authenticate/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Users_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Users_model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/users/update_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/users/update_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/users/Insert_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/users/Insert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/users/delete_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/users/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/users/fetch_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/users/fetch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/users/update_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/users/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/welcome_message.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/welcome_message.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,20 +80,22 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/views/authenticate" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="I:\XAMPP\htdocs\CodeIgniter-Practices\databases" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\XAMPP\htdocs\CodeIgniter-Practices\application\views\authenticate" />
       <recent name="I:\XAMPP\htdocs\CodeIgniter-Practices\application\views\users" />
       <recent name="I:\XAMPP\htdocs\CodeIgniter-Practices\databases\practices_1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\XAMPP\htdocs\CodeIgniter-Practices\databases" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -116,7 +131,8 @@
       <workItem from="1566469267313" duration="1626000" />
       <workItem from="1566473674917" duration="289000" />
       <workItem from="1566473978753" duration="1576000" />
-      <workItem from="1566486678453" duration="1101000" />
+      <workItem from="1566486678453" duration="3242000" />
+      <workItem from="1566490731559" duration="7026000" />
     </task>
     <servers />
   </component>
@@ -135,5 +151,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

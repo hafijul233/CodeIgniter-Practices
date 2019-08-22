@@ -13,21 +13,22 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>User Name Fetch</title>
+  <title>CRUD Operation</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="<?= base_url(); ?>bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
 <a href="<?= base_url(); ?>"><button class="btn btn-primary text-white m-2">Home</button></a>
-<h2 class="text-center my-3">Practice : 02</h2>
+<h2 class="text-center my-3">Practice : 03</h2>
 <div class="container-fluid">
   <div class="row">
     <div class="offset-3 col-sm-6">
       <div class="card">
         <div class="card-header bg-success text-white">
-          <h4 class="text-center">Fetch User Date from MySql</h4>
+          <h4 class="text-center">Delete User Date from MySql</h4>
         </div>
         <div class="card-body">
+            <?php if (isset($msg)){ echo $msg; unset($msg); /*redirect storage clear*/ } ?>
           <div class="table-responsive">
               <table class="table table-hover table-striped table-bordered">
                 <thead>
@@ -35,6 +36,7 @@
                   <th>ID</th>
                   <th>First Name</th>
                   <th>Last Name</th>
+                  <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -45,6 +47,11 @@
                             <td><?= $user->id; ?></td>
                             <td><?= $user->first_name; ?></td>
                             <td><?= $user->last_name; ?></td>
+                            <td>
+                              <a href="<?= base_url().'users/delete_name/' . $user->id; ?>">
+                                <button class="btn btn-primary btn-sm text-white">Delete</button>
+                              </a>
+                            </td>
                           </tr>
                         <?php }
                     } else { ?>

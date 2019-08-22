@@ -31,18 +31,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
       </div>
     </div>
-    <!--  -->
+    <!-- Simple Authentication -->
     <div class="col-sm-12 col-md-6 col-xl-3 mb-3">
       <div class="card">
         <div class="card-header bg-success text-white">
-          <p class="text-center mb-n1">2. CRUD Operation MySql</p>
+          <p class="text-center mb-n1">2. Simple Authentication System</p>
         </div>
         <div class="card-body" style="padding: 0rem;">
           <ol class="list-group list-group-flush">
-            <li class="list-group-item"><a href="<?= base_url().'users/insert_name'; ?>">Insert Name</a></li>
-            <li class="list-group-item"><a href="<?= base_url().'users/insert_name'; ?>">Fetch Name</a></li>
-            <li class="list-group-item"><a href="<?= base_url().'users/insert_name'; ?>">Delete Name</a></li>
-            <li class="list-group-item"><a href="<?= base_url().'users/insert_name'; ?>">Update Name</a></li>
+            <li class="list-group-item"><a href="<?= base_url().'authentication/login'; ?>">Login</a></li>
+            <li class="list-group-item"><a href="<?= base_url().'authentication/register'; ?>">Registration</a></li>
+            <li class="list-group-item"><a href="<?= base_url().'authentication/recovery'; ?>">Password Recovery</a></li>
+            <li class="list-group-item"><a href="<?= base_url().'authentication/activation'; ?>">Email Activation (Future)</a></li>
           </ol>
         </div>
       </div>

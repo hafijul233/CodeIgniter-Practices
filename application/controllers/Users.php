@@ -28,7 +28,7 @@
 		{
 			$user_list = $this->Users_model->fetch_name();
 			
-			$this->load->view('users/fetch_user', array('user_names' => $user_list));
+			$this->load->view('users/fetch', array('user_names' => $user_list));
 		}
 		
 		public function insert_name()
@@ -42,6 +42,8 @@
 			$this->load->helper('form');
 			$this->load->library('form_validation');
 			
+			//container array
+			$data = array();
 			//form Validation Rules
 			//Reference https://www.codeigniter.com/user_guide/libraries/form_validation.html
 			$this->form_validation->set_rules('first_name', 'First Name', 'required|max_length[255]|alpha');
@@ -53,13 +55,12 @@
 				$last_name = $this->input->post('last_name');
 				
 				if ($this->Users_model->insert_name($first_name, $last_name) != FALSE) {
-					$this->load->view('users/Insert_user', array('msg' => 'Data Insert Successful.'));
+					$data['msg'] = 'Data Insert Successful.';
 				} else {
-					$this->load->view('users/Insert_user', array('msg' => 'Data Insert Failed.'));
+					$data['msg'] = 'Data Insert Failed.';
 				}
-			} else {
-				$this->load->view('users/Insert_user', array());
 			}
+				$this->load->view('users/insert', $data);
 		}
 		
 		public function delete_name($id = NULL)
@@ -75,7 +76,7 @@
 			}
 			$data['user_names'] = $this->Users_model->fetch_name();
 			
-			$this->load->view('users/delete_user', $data);
+			$this->load->view('users/delete', $data);
 		}
 		
 		public function update_name($id = NULL)
@@ -121,6 +122,6 @@
 			}
 			
 			$data['user_names'] = $this->Users_model->fetch_name();
-			$this->load->view('users/update_user', $data);
+			$this->load->view('users/update', $data);
 		}
 	}

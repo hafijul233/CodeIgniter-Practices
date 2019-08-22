@@ -13,7 +13,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>User Name Fetch</title>
+	<title>CRUD Operation</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="<?= base_url(); ?>bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
