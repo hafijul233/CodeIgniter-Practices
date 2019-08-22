@@ -14,13 +14,14 @@
         public function __construct()
         {
             parent::__construct();
+            $this->load->model('Users_model');
             
         }
         
         //Class default method if other method don't exist
         public function index()
         {
-            $this->load->view('users/Insert_user');
+            $this->fetch_name();
         }
         
         public function insert_name()
@@ -33,7 +34,6 @@
              */
             $this->load->helper('form');
             $this->load->library('form_validation');
-            $this->load->model('Users_model');
             
             //form Validation Rules
             //Reference https://www.codeigniter.com/user_guide/libraries/form_validation.html
@@ -57,11 +57,61 @@
         
         public function fetch_name()
         {
-            $this->load->model('Users_model');
-            
             $user_list = $this->Users_model->fetch_name();
-
-            $this->load->view('users/fetch_user',array('user_names' => $user_list));
+            
+            $this->load->view('users/fetch_user', array('user_names' => $user_list));
         }
         
+        public function delete_name($id = NULL)
+        {
+            $data = array();
+            
+            if (isset($id)) {
+                if ($this->Users_model->delete_name($id) == TRUE) {
+                    $data['msg'] = "Id Number: " . $id . " deleted Successful.";
+                } else {
+                    $data['msg'] = "Id Number: " . $id . " deletion failed.";
+                }
+            }
+            $data['user_names'] = $this->Users_model->fetch_name();
+            
+            $this->load->view('users/delete_user', $data);
+        }
+        
+        public function update_name($id = NULL)
+        {
+            $this->load->helper('form');
+            $this->load->library('form_validation');
+            
+            $data = array();
+            
+            //form Validation Rules
+            //Reference https://www.codeigniter.com/user_guide/libraries/form_validation.html
+            $this->form_validation->set_rules('first_name', 'First Name', 'required|max_length[255]|alpha');
+            $this->form_validation->set_rules('last_name', 'Last Name', 'required|max_length[255]|alpha');
+            
+            if(isset($id)) {
+                $user_info = $this->Users_model->user_by_id($id);
+                if($user_info!= FALSE) {
+                 $data['user_info'] = $user_info;
+                } else {
+                    $user_info = NULL;
+                }
+            }
+            
+            //Check if form validation have false / errors
+            if ($this->form_validation->run()) {
+                $first_name = $this->input->post('first_name');
+                $last_name = $this->input->post('last_name');
+                
+                if ($this->Users_model->insert_name($first_name, $last_name) != FALSE)
+                    $data['msg'] = "Id Number: " . $id . " Updated Successful.";
+                else
+                    $data['msg'] = "Id Number: " . $id . " Update failed.";
+                
+            } else {
+                $data['user_names'] = $this->Users_model->fetch_name();
+                $this->load->view('users/update_user', $data);
+            }
+        }
     }

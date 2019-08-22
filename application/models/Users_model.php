@@ -16,7 +16,6 @@
             parent::__construct();
         }
         
-        //Class default method if other method don't exist
         public function insert_name($fn, $ln)
         {
             //setting value pair with table column else data will confuse th query builder
@@ -33,10 +32,23 @@
         {
             //Query = SELECT * FROM `tbl_users` WHERE 1
             $query = $this->db->get('tbl_users');
-            
+        
             //result() return values as array of objects
             //Objects are Table row
             return $query->result();
         }
+    
+        public function delete_name($id)
+        {
+            //setting value pair with table column else data will confuse th query builder
+            $data = array('id' => $id);
         
+            //Query = INSERT INTO `tbl_users`(`first_name`,`last_name`) VALUES('$fn', '$ln');
+            if ($this->db->delete('tbl_users', $data)) {
+                return TRUE;
+            }
+            return FALSE;
+        }
+    
+    
     }

@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="<?= base_url(); ?>bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
+<a href="<?= base_url(); ?>"><button class="btn btn-primary text-white m-2">Home</button></a>
 <h2 class="text-center my-3">Practice : 01</h2>
 <div class="container-fluid">
   <div class="row">
@@ -48,7 +49,7 @@
         </div>
         <div class="card-footer">
           <div class="col text-center">
-            <button type="submit" class="bg-primary text-white btn-lg" name="insert" value="Insert">Insert</button>
+            <button type="submit" class="btn btn-primary text-white btn-lg" name="insert" value="Insert">Insert</button>
           </div>
         </div>
           <?= form_close(); ?>
