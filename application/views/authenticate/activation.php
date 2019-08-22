@@ -26,8 +26,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <div class="row">
     <div class="offset-4 col-sm-4">
       <div class="card">
-        <div class="card-header bg-secondary text-white">
-          <h4 class="text-center">Simple Authentication</h4>
+        <div class="card-header bg-warning text-black-50">
+          <h4 class="text-center">Account Activation</h4>
         </div>
         <form action="<?= base_url() . 'authentication/login'; ?>" method="post" accept-charset="utf8">
           <div class="card-body">

@@ -71,7 +71,22 @@ class Authentication extends CI_Controller
 
     public function recovery()
     {
-        $this->load->view('authenticate/recovery');
+        //container array
+        $data = array();
+
+        $this->form_validation->set_rules('email', 'Email Address', 'required|max_length[255]|valid_email');
+
+        if ($this->form_validation->run()) {
+            $email = $this->input->post('email');
+            $response = $this->Authentication_model->fetch_user_by_email($email);
+            if ($response == FALSE) {
+                $data['msg'] = "No User Found by this Email Address";
+            } else {
+                print_r($response);
+                die();
+            }
+        }
+        $this->load->view('authenticate/recovery',$data);
     }
 
     public function activation()

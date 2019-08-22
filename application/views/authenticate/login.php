@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <form action="<?= base_url() . 'authentication/login'; ?>" method="post" accept-charset="utf8">
           <div class="card-body">
               <?php if (isset($msg)) { ?>
-                <div class="col alert alert-danger text-white">
+                <div class="col alert bg-danger text-white text-center">
                     <?= $msg; ?>
                 </div>
                   <?php

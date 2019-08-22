@@ -21,18 +21,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <a href="<?= base_url(); ?>">
   <button class="btn btn-primary text-white m-2">Home</button>
 </a>
-<h2 class="text-center my-3">Practice : 05</h2>
+<h2 class="text-center my-3">Practice : 07</h2>
 <div class="container-fluid">
   <div class="row">
     <div class="offset-4 col-sm-4">
       <div class="card">
-        <div class="card-header bg-secondary text-white">
-          <h4 class="text-center">Simple Authentication</h4>
+        <div class="card-header bg-primary text-white">
+          <h4 class="text-center">Password Recovery</h4>
         </div>
-        <form action="<?= base_url() . 'authentication/login'; ?>" method="post" accept-charset="utf8">
+        <form action="<?= base_url() . 'authentication/recovery'; ?>" method="post" accept-charset="utf8">
           <div class="card-body">
               <?php if (isset($msg)) { ?>
-                <div class="col alert alert-danger text-white">
+                <div class="col alert bg-warning text-black-50 text-center">
                     <?= $msg; ?>
                 </div>
                   <?php
@@ -46,12 +46,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                          name="email"
                          placeholder="Email Address ..." required autofocus>
                   <span class="text-danger"><?= form_error('email'); ?></span>
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password" tabindex="2" name="password"
-                         placeholder="Password ..." required autofocus>
-                  <span class="text-danger"><?= form_error('password'); ?></span>
                 </div>
               </div>
             </div>

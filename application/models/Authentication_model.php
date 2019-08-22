@@ -31,4 +31,15 @@
                 return $user[0];
             }
         }
+
+        public function fetch_user_by_email($email)
+        {
+            $query = $this->db->get_where('tbl_authenticate', array('email' => $email), 1);
+            if($query->num_rows() == 0)
+                return FALSE;
+            else {
+                $user = $query->result();
+                return $user[0];
+            }
+        }
 	}

@@ -51,11 +51,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-sm-12 col-md-6 col-xl-3 mb-3">
       <div class="card">
         <div class="card-header bg-warning text-dark">
-          <p class="text-center mb-n1">3. CRUD Operation MySql</p>
+          <p class="text-center mb-n1">3. CodeIgniter Image Upload</p>
         </div>
         <div class="card-body" style="padding: 0rem;">
           <ol class="list-group list-group-flush">
-            <li class="list-group-item"><a href="<?= base_url().'users/insert_name'; ?>">Insert Name</a></li>
+            <li class="list-group-item"><a href="<?= base_url().'users/insert_name'; ?>">Upload Image with Ajax</a></li>
             <li class="list-group-item"><a href="<?= base_url().'users/insert_name'; ?>">Fetch Name</a></li>
             <li class="list-group-item"><a href="<?= base_url().'users/insert_name'; ?>">Delete Name</a></li>
             <li class="list-group-item"><a href="<?= base_url().'users/insert_name'; ?>">Update Name</a></li>

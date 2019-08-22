@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbd679c0-8f60-4b28-b5b2-3b4638c9b271" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/controllers/Authentication.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/models/Authentication_model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/authenticate/activation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/authenticate/home.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/authenticate/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/authenticate/recovery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/authenticate/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/users/Insert_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/users/Insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/users/delete_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/users/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/users/fetch_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/users/fetch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/users/update_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/users/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Authentication.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Authentication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Authentication_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Authentication_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/authenticate/activation.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/authenticate/activation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/authenticate/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/authenticate/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/authenticate/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/authenticate/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/authenticate/recovery.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/authenticate/recovery.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/welcome_message.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/welcome_message.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -111,7 +102,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="CodeIgniter" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="Local Host" start_url="/CodeIgniter-Practices/">
+    <configuration name="CodeIgniter" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" server_name="Local Host" start_url="/CodeIgniter-Practices/">
       <method v="2" />
     </configuration>
   </component>
@@ -133,6 +124,7 @@
       <workItem from="1566473978753" duration="1576000" />
       <workItem from="1566486678453" duration="3242000" />
       <workItem from="1566490731559" duration="7026000" />
+      <workItem from="1566504137990" duration="1892000" />
     </task>
     <servers />
   </component>

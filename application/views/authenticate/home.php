@@ -80,7 +80,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <a class="dropdown-item" href="#">Sidebar Page</a>
             <a class="dropdown-item" href="#">FAQ</a>
             <a class="dropdown-item" href="#">404</a>
-            <a class="dropdown-item" href="<?= base_url().'authenticate/logout'; ?>">Log Out</a>
+            <a class="dropdown-item" href="<?= base_url().'authentication/logout'; ?>">Log Out</a>
           </div>
         </li>
       </ul>
